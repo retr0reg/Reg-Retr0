@@ -1,7 +1,9 @@
 #!/bin/bash
+#Author: Retr0
 
 gre='\033[34m'
 blu='\033[36m'
+yel='\033[33m'
 end='\033[0m'
 
 echo -e "${blu}[!] Those command required you to update apt, have you done this yet?"
@@ -12,6 +14,7 @@ if test $choice1 = 'n'
 then
     echo -e "${blu}Updating Apt.......${end}"
     # sudo apt update
+    echo -e "${blu}Please run the script again.${end}"
 elif test $choice1 = 'y'
     echo -e "${blu}Continuing...${end} "
 then
@@ -30,8 +33,10 @@ read choice2
         # sudo apt clean
         echo "finished."
     else
+        echo -e "${yel}[-]FAILED!!!!${end}"
         exit
     fi
 else
+    echo -e "${yel}[-]FAILED!!!!${end}"
     exit
 fi
