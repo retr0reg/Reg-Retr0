@@ -12,8 +12,8 @@ read choice1
 
 if test $choice1 = 'y'
 then
-    # sudo update-grub
-    # sudo systemctl set-default multi-user.target
+    sudo update-grub
+    sudo systemctl set-default multi-user.target
     echo -e "${gre}[+]${end} Now Reboot is required, please run: "sudo reboot" command by yourself"
 else
     echo -e "${yel}[-]FAILED!!!!${end}"

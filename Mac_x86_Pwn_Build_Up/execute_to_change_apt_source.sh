@@ -14,12 +14,12 @@ read choice1
 if test $choice1 = 'y'
 then
     echo -e "${blu}[*]Backup Apt Source.....${end}"
-    # sudo cp /etc/apt/sources.list /etc/apt/sources_copy.list
+    sudo cp /etc/apt/sources.list /etc/apt/sources_copy.list
     echo -e "${blu}[*]Clearing Apt List.....${end}"
-    # sudo echo "" > /etc/apt/sources.list
+    sudo echo "" > /etc/apt/sources.list
     APT_LIST=`cat apt_source.list`
     echo -e "${blu}[*]Changing Apt List.....${end}"
-    #sudo echo "${APT_LIST}" > etc/apt/sources.list
+    sudo echo "${APT_LIST}" > etc/apt/sources.list
     echo -e "${blu}[*]Success!!!!${end}"
 else
     echo -e "${yel}[-]FAILED!!!!${end}"
