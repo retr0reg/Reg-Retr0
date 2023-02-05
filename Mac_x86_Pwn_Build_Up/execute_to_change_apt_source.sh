@@ -19,7 +19,7 @@ then
     sudo echo "" > /etc/apt/sources.list
     APT_LIST=`cat apt_source.list`
     echo -e "${blu}[*]Changing Apt List.....${end}"
-    sudo echo "${APT_LIST}" > etc/apt/sources.list
+    sudo echo "${APT_LIST}" > /etc/apt/sources.list
     echo -e "${blu}[*]Success!!!!${end}"
 else
     echo -e "${yel}[-]FAILED!!!!${end}"
