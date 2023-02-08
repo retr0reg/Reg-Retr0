@@ -4,14 +4,17 @@
 gre='\033[34m'
 blu='\033[36m'
 yel='\033[33m'
+red='\033[31m'
 end='\033[0m'
 
-
-echo -e "${blu}[!] Those command required you to change Apt source, You sure to do this?"
+echo -e "${red}[!] Those command only works in Ubuntu 20.04, Do you understand this?${end}"
+echo -e "${gre}y = Yes, n = No  (y/n): ${end}\c"
+read choice0
+echo -e "${blu}\n[!] Those command required you to change Apt source, You sure to do this?${end}"
 echo -e "${gre}y = Yes, n = No  (y/n): ${end}\c"
 read choice1
 
-if test $choice1 = 'y'
+if test $choice1 = 'y' && test $choice0 = 'y' 
 then
     echo -e "${blu}[*]Backup Apt Source.....${end}"
     sudo cp /etc/apt/sources.list /etc/apt/sources_copy.list
