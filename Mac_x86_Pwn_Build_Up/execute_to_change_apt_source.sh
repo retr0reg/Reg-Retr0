@@ -8,10 +8,10 @@ red='\033[31m'
 end='\033[0m'
 
 echo -e "${red}[!] Those command only works in Ubuntu 20.04, Do you understand this?${end}"
-echo -e "${gre}y = Yes, n = No  (y/n): ${end}\c"
+echo -e "${gre}y = Yes, n = No  (y/N): ${end}\c"
 read choice0
 echo -e "${blu}\n[!] Those command required you to change Apt source, You sure to do this?${end}"
-echo -e "${gre}y = Yes, n = No  (y/n): ${end}\c"
+echo -e "${gre}y = Yes, n = No  (y/N): ${end}\c"
 read choice1
 
 if test $choice1 = 'y' && test $choice0 = 'y' 
