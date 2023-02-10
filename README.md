@@ -10,3 +10,9 @@
 
 ## Tcache Bin Attacks
 存放着关于Tcache Attack 课程的题目
+* `ld-2.27.so` libc debug 文件
+* `libc-2.27.so` libc 文件
+* 题目
+    * `tcache_poisoning`
+    * `tcache_stashing_unlink`
+    * `unsorted_bin-attack` 
